@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .alert-zone {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: dimgray;
+            opacity: 0.8;
+        }
+
+        .alert-content {
+            position: fixed;
+            top: 100px;
+            height: 30vw;
+            width: 300px;
+            left: 35vw;
+            border-radius: 8px;
+        }
+
+        .imj_content {
+            position: fixed;
+            top: 100px;
+            height: 30vw;
+            width: 300px;
+            left: 35vw;
+            border-radius: 8px;
+        }
+
+        .close {
+            position: fixed;
+            padding: 8px;
+            width: 20px;
+            border: 1px solid black;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .hide {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+<div id="imgList" class="img_list"></div>
+<div id="alertZone" class="alert-zone hide"></div>
+<div id="alertContent" class="alert-content hide">
+    <img id="imgContent" class="imj_content">
+    <div id="close" class="close">X</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
